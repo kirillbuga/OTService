@@ -1,0 +1,28 @@
+﻿@model OTAnswerService.Models.AnswerViewModel
+
+<div class="container">
+    @using (Html.BeginForm("Edit", "Write", FormMethod.Post))
+    {
+        if (Model != null)
+        {
+            @Html.HiddenFor(x => x.Id)
+            <div class="container">
+                <div class="help-block">
+                    <div class="row">
+                        @Html.LabelFor(x => x.Number, "Номер билета")
+                        @Html.TextBoxFor(x => x.Number, new { @class = "span1"})
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(x => x.Title, "Вопрос")
+                        @Html.TextBoxFor(x => x.Title)
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(x => x.Description, "Ответ")
+                        @Html.TextAreaFor(x => x.Description, new { rows = "15", style = "width: 50%"})
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-danger" value="Сохранить"/>
+            </div>
+        }
+    }
+</div>

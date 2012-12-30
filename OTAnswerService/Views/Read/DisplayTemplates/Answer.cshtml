@@ -1,0 +1,8 @@
+﻿@model OTAnswerService.Entities.Answer
+           
+<tr id="answer-@Model.Id">
+    <td>@Model.Id</td>
+    <td>@Model.Title</td>
+    <td><a class="details btn" data-id="@Model.Id" data-expand-row-source="@Url.Action("Details", new {id = @Model.Id})" href="#">+</a></td>
+</tr>
+

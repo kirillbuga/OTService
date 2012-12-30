@@ -1,0 +1,7 @@
+c:\users\kirill\documents\visual studio 2010\Projects\OTAnswerService\OTAnswerService\bin\OTAnswerService.dll
+c:\users\kirill\documents\visual studio 2010\Projects\OTAnswerService\OTAnswerService\bin\OTAnswerService.pdb
+c:\users\kirill\documents\visual studio 2010\Projects\OTAnswerService\OTAnswerService\bin\EntityFramework.dll
+c:\users\kirill\documents\visual studio 2010\Projects\OTAnswerService\OTAnswerService\bin\EntityFramework.xml
+c:\users\kirill\documents\visual studio 2010\Projects\OTAnswerService\OTAnswerService\obj\Debug\OTAnswerService.csprojResolveAssemblyReference.cache
+c:\users\kirill\documents\visual studio 2010\Projects\OTAnswerService\OTAnswerService\obj\Debug\OTAnswerService.dll
+c:\users\kirill\documents\visual studio 2010\Projects\OTAnswerService\OTAnswerService\obj\Debug\OTAnswerService.pdb

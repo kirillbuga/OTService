@@ -1,0 +1,17 @@
+﻿@model SelectList
+
+<div class="container">
+    @using (Html.BeginForm("Edit", "Write", FormMethod.Get))
+    {
+        <div class="span3">
+            @Html.DropDownList("list", Model, new { @class = "span5", onchange = "changeValue(this)" })
+            <input id="id" name="id" type="hidden" value="@Model.First().Value"/>
+            <input type="submit" class="btn btn-info" value="Найти" />
+        </div>
+    }
+</div>
+<script>
+    changeValue = function (obj) {
+        $("#id").val(obj.value);
+    }
+</script>

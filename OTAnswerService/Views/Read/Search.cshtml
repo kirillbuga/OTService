@@ -5,60 +5,29 @@
     @using(Html.BeginForm("Search"))
     {
         <input name="searchString" id="searchString" placeholder="Введите поисковый запрос"/>
+        <input name="options" id="options" type="hidden" value="number"/>
         <input type="submit" class="btn btn-danger" value="Поиск"/>
     }
     
-    @if (Model.SearchByAnswers != null && Model.SearchByNumber != null && Model.SearchByTitle != null)
-    {
-        <ul class="nav nav-tabs" id="myTab">
-            <li class="active"><a data-toggle="tab" href="#home">Поиск по номеру билета</a></li>
-            <li><a href="#profile" data-toggle="tab">Поиск по вопросу</a></li>
-            <li><a href="#messages" data-toggle="tab">Поиск по ответу</a></li>
-        </ul>
+    <div class="btn-group" data-toggle="buttons-radio">
+        <button id="number" type="button" class="btn btn-primary active" onclick="selectOption(this)">Поиск по номеру</button>
+        <button id="question" type="button" class="btn btn-primary" onclick="selectOption(this)">Поиск по вопросу</button>
+        <button id="answer" type="button" class="btn btn-primary" onclick="selectOption(this)">Поиск по ответу</button>
+    </div>
 
-        <div class="tab-content">
-            <div class="tab-pane active" id="home">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <td>№</td>
-                            <td>Тема</td>
-                            <td></td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @Html.DisplayFor(x => x.SearchByNumber)
-                    </tbody>
-                </table>
-            </div>
-            <div class="tab-pane" id="profile">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <td>№</td>
-                            <td>Тема</td>
-                            <td></td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @Html.DisplayFor(x => x.SearchByTitle)
-                    </tbody>
-                </table>
-            </div>
-            <div class="tab-pane" id="messages">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <td>№</td>
-                            <td>Тема</td>
-                            <td></td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @Html.DisplayFor(x => x.SearchByAnswers)
-                    </tbody>
-                </table>
-            </div>
-        </div>
+    @if (Model != null)
+    {
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <td>№</td>
+                    <td>Тема</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                @Html.DisplayFor(x => x.Results)
+            </tbody>
+        </table>
     }
 </div>

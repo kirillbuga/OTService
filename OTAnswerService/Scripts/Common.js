@@ -36,3 +36,11 @@ var loadDetails = function () {
 };
 
 $("a.details").one("click", loadDetails);
+
+selectOption = function(obj) {
+    $("#options").val($(obj).attr("id"));
+};
+
+changeValue = function(obj) {
+    $("#id").val(obj.value);
+};

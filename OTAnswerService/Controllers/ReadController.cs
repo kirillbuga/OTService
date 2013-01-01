@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 using OTAnswerService.DataAccess;
@@ -42,20 +43,26 @@ namespace OTAnswerService.Controllers
         }
 
         [HttpPost]
-        public ActionResult Search(string searchString)
+        public ActionResult Search(string searchString, string options)
         {
-            int number;
-            Int32.TryParse(searchString, out number);
+            List<Answer> results = null;
 
-            var searchByNumber = _Repository.Query<Answer>().Where(x => x.Number == number).ToList();
-            var searchByTitle = _Repository.Query<Answer>().Where(x => x.Title.Contains(searchString)).ToList();
-            var searchByAnswers = _Repository.Query<Answer>().Where(x => x.Description.Contains(searchString)).ToList();
+            switch (options)
+            {
+                case "number":
+                    results = _Repository.Query<Answer>().Where(x => x.Number.Contains(searchString)).ToList();
+                    break;
+                case "question":
+                    results = _Repository.Query<Answer>().Where(x => x.Title.Contains(searchString)).ToList();
+                    break;
+                case "answer":
+                    results = _Repository.Query<Answer>().Where(x => x.Description.Contains(searchString)).ToList();
+                    break;
+            }
 
             var model = new SearchResultViewModel
                             {
-                                SearchByAnswers = searchByAnswers,
-                                SearchByNumber = searchByNumber,
-                                SearchByTitle = searchByTitle
+                                Results = results
                             };
 
             return View(model);

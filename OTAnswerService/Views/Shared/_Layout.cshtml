@@ -8,16 +8,17 @@
     </head>
 
     <body>
-        <div class="container-fluid span6">
+        <div class="container-fluid span6 ">
 
             @if(ViewData["error"] != null)
             {
-                <div class="well">
+                <div class="row well">
                     @ViewData["error"]
                 </div>
             }
-
-            @RenderBody()
+            <div class="row">
+                @RenderBody()
+            </div>
         </div>
         
     </body>

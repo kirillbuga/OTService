@@ -37,7 +37,7 @@ namespace OTAnswerService
         {
             AreaRegistration.RegisterAllAreas();
 
-            GenerateConnectionString();
+            //GenerateConnectionString();
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);

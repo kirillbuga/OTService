@@ -5,3 +5,12 @@ c:\users\kirill\documents\visual studio 2010\Projects\OTAnswerService\OTAnswerSe
 c:\users\kirill\documents\visual studio 2010\Projects\OTAnswerService\OTAnswerService\obj\Debug\OTAnswerService.csprojResolveAssemblyReference.cache
 c:\users\kirill\documents\visual studio 2010\Projects\OTAnswerService\OTAnswerService\obj\Debug\OTAnswerService.dll
 c:\users\kirill\documents\visual studio 2010\Projects\OTAnswerService\OTAnswerService\obj\Debug\OTAnswerService.pdb
+C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\OTAnswerService.dll
+C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\OTAnswerService.pdb
+C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\EntityFramework.dll
+C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\EntityFramework.xml
+C:\Users\Andrey_B\Desktop\OT\OTAnswerService\obj\Debug\OTAnswerService.csprojResolveAssemblyReference.cache
+C:\Users\Andrey_B\Desktop\OT\OTAnswerService\obj\Debug\OTAnswerService.dll
+C:\Users\Andrey_B\Desktop\OT\OTAnswerService\obj\Debug\OTAnswerService.pdb
+C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\System.Data.SqlServerCe.dll
+C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\System.Data.SqlServerCe.Entity.dll

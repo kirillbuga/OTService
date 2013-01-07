@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Web.Mvc;
 using OTAnswerService.DataAccess;
 using OTAnswerService.Entities;
 using System.Linq;
@@ -49,8 +50,9 @@ namespace OTAnswerService.Controllers
                 _Repository.Save(answer);
                 return RedirectToAction("Index");
             }
-            catch
+            catch (Exception e)
             {
+                ViewData["error"] = e.Message;
                 return View(answerViewModel);
             }
         }

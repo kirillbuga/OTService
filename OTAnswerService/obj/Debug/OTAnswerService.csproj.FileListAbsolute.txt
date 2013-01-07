@@ -14,3 +14,7 @@ C:\Users\Andrey_B\Desktop\OT\OTAnswerService\obj\Debug\OTAnswerService.dll
 C:\Users\Andrey_B\Desktop\OT\OTAnswerService\obj\Debug\OTAnswerService.pdb
 C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\System.Data.SqlServerCe.dll
 C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\System.Data.SqlServerCe.Entity.dll
+C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\System.Data.DataSetExtensions.dll
+C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\System.Data.dll
+C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\System.Data.Entity.dll
+C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\System.Web.Entity.dll

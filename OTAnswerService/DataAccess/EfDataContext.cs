@@ -16,6 +16,7 @@ namespace OTAnswerService.DataAccess
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            EfConnectionFactory.Enable(true);
 #if DEBUG
             Database.SetInitializer(new CreateDatabaseIfNotExists<EfDataContext>());
 #endif

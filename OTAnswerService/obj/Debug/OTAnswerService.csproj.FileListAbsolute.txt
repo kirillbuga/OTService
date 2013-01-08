@@ -18,3 +18,4 @@ C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\System.Data.DataSetExtensions.d
 C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\System.Data.dll
 C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\System.Data.Entity.dll
 C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\System.Web.Entity.dll
+C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\MySql.Data.dll

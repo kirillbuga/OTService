@@ -52,7 +52,7 @@ namespace OTAnswerService.Controllers
             }
             catch (Exception e)
             {
-                ViewData["error"] = e.Message;
+                ViewData["error"] = e.Message + "\n\r"+e.InnerException;
                 return View(answerViewModel);
             }
         }

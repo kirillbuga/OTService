@@ -10,7 +10,7 @@ namespace OTAnswerService.DataAccess
     /// </remarks>
     public class EfConnectionFactory : IDbConnectionFactory
     {
-        private const string ConnectionStringAppSetting = "SQLSERVER_CONNECTION_STRING";
+        private const string ConnectionStringAppSetting = "OTAnswerService";
 
         private readonly string connectionString;
 

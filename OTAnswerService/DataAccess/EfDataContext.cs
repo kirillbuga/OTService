@@ -5,6 +5,12 @@ namespace OTAnswerService.DataAccess
 {
     public class EfDataContext : DbContext
     {
+        public EfDataContext()
+#if DEBUG
+            : base("OTAnswerService")
+#endif
+        {
+        }
 
         public DbSet<Answer> Answers { get; set; }
 

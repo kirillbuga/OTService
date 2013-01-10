@@ -1,6 +1,6 @@
 ﻿@model OTAnswerService.Models.SearchResultViewModel
 
-<div class="container">
+<div class="row">
     
     @using(Html.BeginForm("Search"))
     {
@@ -8,21 +8,22 @@
         <input name="options" id="options" type="hidden" value="number"/>
         <input type="submit" class="btn btn-danger" value="Поиск"/>
     }
-    
-    <div class="btn-group" data-toggle="buttons-radio">
-        <button id="number" type="button" class="btn btn-primary active" onclick="selectOption(this)">Поиск по номеру</button>
-        <button id="question" type="button" class="btn btn-primary" onclick="selectOption(this)">Поиск по вопросу</button>
-        <button id="answer" type="button" class="btn btn-primary" onclick="selectOption(this)">Поиск по ответу</button>
+    <div class="container">
+        <div class="btn-group" data-toggle="buttons-radio">
+            <button id="number" type="button" class="btn btn-primary active" onclick="selectOption(this)">Поиск по номеру</button>
+            <button id="question" type="button" class="btn btn-primary" onclick="selectOption(this)">Поиск по вопросу</button>
+            <button id="answer" type="button" class="btn btn-primary" onclick="selectOption(this)">Поиск по ответу</button>
+        </div>
     </div>
-
+    <br/>
     @if (Model != null)
     {
-        <table class="table table-bordered">
+        <table class="table table-bordered table-striped">
             <thead>
                 <tr>
                     <td>№</td>
                     <td>Тема</td>
-                    <td></td>
+                    <td style="width: 25px"></td>
                 </tr>
             </thead>
             <tbody>

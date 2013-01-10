@@ -6,21 +6,57 @@
         <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" type="text/css" />
 
     </head>
-
     <body>
-        <div class="container-fluid span6 ">
-
-            @if(ViewData["error"] != null)
-            {
-                <div class="row well">
-                    @ViewData["error"]
-                </div>
-            }
+        <div class="container-fluid">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="@Url.Action("FullList", "Read")">OT Service</a>
+                        <div class="nav-collapse collapse navbar-responsive-collapse">
+                            <ul class="nav">
+                                <li id="home"><a href="@Url.Action("FullList", "Read")">Полный список</a></li>
+                                <li id="edit"><a href="@Url.Action("Index", "Write")">Добавить\Изменить</a></li>
+                                <li id="search"><a href="@Url.Action("Search", "Read")">Поисковая страница</a></li>
+                            </ul>
+@*                            <ul class="nav pull-right">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Поиск по... <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">... по номеру</a></li>
+                                        <li><a href="#">... по вопросу</a></li>
+                                        <li><a href="#">... по ответу</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <form class="navbar-search pull-left form-search" action="">
+                                        <input type="text" class="search-query span2" placeholder="Search"/>
+                                        <input class="btn" href="@Url.Action("Search", "Read")" type="submit"value="Поиск"/> 
+                                    </form>
+                                </li>
+                            </ul>*@
+                        </div><!-- /.nav-collapse -->
+                    </div>
+                </div><!-- /navbar-inner -->
+            </div>
             <div class="row">
-                @RenderBody()
+                <div class="hero-unit">
+                    @if(ViewData["error"] != null)
+                    {
+                        <div class="row well">
+                            @ViewData["error"]
+                        </div>
+                    }
+                    <div class="controls">
+                        @RenderBody()
+                    </div>
+                </div>
             </div>
         </div>
-        
     </body>
     <script src="@Url.Content("~/Scripts/jquery-1.8.3.min.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/bootstrap.js")" type="text/javascript"></script>

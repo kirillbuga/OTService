@@ -1,7 +1,7 @@
-﻿@model OTAnswerService.Entities.Answer
+﻿@model OTAnswerService.Models.AnswerViewModel
            
-<tr id="answer-@Model.Id">
-    <td>@Model.Number</td>
+<tr id="answer-@Model.Id" data-target = "@Model.Target">
+    <td>@Model.Id</td>
     <td>@Model.Title</td>
     <td><a class="details btn" data-id="@Model.Id" data-expand-row-source="@Url.Action("Details", new {id = @Model.Id})" href="#">+</a></td>
 </tr>

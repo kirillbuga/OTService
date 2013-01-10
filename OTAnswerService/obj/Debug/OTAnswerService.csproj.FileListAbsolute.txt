@@ -19,3 +19,7 @@ C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\System.Data.dll
 C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\System.Data.Entity.dll
 C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\System.Web.Entity.dll
 C:\Users\Andrey_B\Desktop\OT\OTAnswerService\bin\MySql.Data.dll
+C:\Users\Kirill\Documents\Visual Studio 2010\Projects\OTAnswerService\OTAnswerService\bin\System.Data.DataSetExtensions.dll
+C:\Users\Kirill\Documents\Visual Studio 2010\Projects\OTAnswerService\OTAnswerService\bin\System.Data.dll
+C:\Users\Kirill\Documents\Visual Studio 2010\Projects\OTAnswerService\OTAnswerService\bin\System.Data.Entity.dll
+C:\Users\Kirill\Documents\Visual Studio 2010\Projects\OTAnswerService\OTAnswerService\bin\System.Web.Entity.dll

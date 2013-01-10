@@ -61,7 +61,7 @@ namespace OTAnswerService.Controllers
         {
             var model = _Repository.Query<Answer>()
                 .Where(x => !string.IsNullOrEmpty(x.Title))
-                .ToSelectList(x => x.Title, x => x.Id);
+                .ToSelectList(x => string.Format("{0} {1}", x.Number, x.Title), x => x.Id);
             return View(model);
         }
  

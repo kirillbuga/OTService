@@ -73,3 +73,7 @@ textarea
 {
     display: none;
 }
+
+.table {
+    background-color: white;   
+}

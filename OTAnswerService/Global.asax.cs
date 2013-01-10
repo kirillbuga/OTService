@@ -28,7 +28,7 @@ namespace OTAnswerService
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
-                new { controller = "Write", action = "Index", id = UrlParameter.Optional } // Parameter defaults
+                new { controller = "Read", action = "FullList", id = UrlParameter.Optional } // Parameter defaults
             );
 
         }
